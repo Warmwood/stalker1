@@ -1,0 +1,806 @@
+html{
+	height:100%;
+}
+body{
+	min-height: 100%;
+	position:relative;
+	margin:0 auto;
+	overflow-x:hidden;
+	max-width: initial;
+}
+
+p,span{
+	font-family:Arial;
+	
+	
+}
+a{
+	cursor:pointer;
+	color:#c93e2f;
+	font-size:16px;
+}
+a:hover{color:red;}
+span{
+font-size:25px;
+display:block;
+text-transform:uppercase;
+
+}
+
+input{
+	height:30px;
+	border-radius:3px;
+	margin:5px;
+	width:200px;
+}
+
+/*----------------------кнопки--------------------------------------*/
+#button2,#button3{	
+	position:absolute;
+	bottom:-15%;
+	transform:translate(-50%,0 );
+}
+#button4{margin-top:60px;}
+#button1:hover, #button2:hover,#button3:hover,#button4:hover{background-color:#faf374;}
+#button1, #button2,#button3,#button4{
+
+	
+	background-color:#ffdb4c;
+	color:black;
+	width:200px;
+	height:30px;
+	border-radius:3px;
+	text-align:center;
+	margin:5px;
+	display:inline-block;
+}
+
+#button1 span, #button2 span,#button3 span,#button4 span	{
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	color:black;
+	cursor:pointer;
+}
+
+/*-----------------------поп-апы-------------------------------------*/
+#window{
+	display:none;position:fixed;
+	bottom:0;
+	left:-2000px;
+	right:-2000px;
+	top:0;
+	background-color: rgba(23,59,136,0.8);
+	opacity:0.2;
+	z-index:100;}
+#window.visible{display:block;}
+#divka{
+		position:absolute;
+      	left:50%;
+      	top:50%;
+      	width:500px;
+      	height:300px;
+      	color:black;
+      	border:1px solid #efe;
+      	background-color:white;
+		transform:translate(-50%,-50%);
+		padding-bottom:10px;
+		padding-top:0;
+		text-align:center;
+      }
+      #divka>p{text-align:center;
+      	height:40px;
+      	line-height:40px;
+      	padding-top:10px;
+      	padding-left:10px;
+      	padding-right:10px;
+      	padding-bottom: 10px;}
+     #button{background-color:gray;
+     	border-radius:4px;
+     	display:inline-block;
+     	cursor:pointer;
+     	color:white;
+     	text-align:center;
+     	width:100px;
+     	height:40px;
+     }
+ #button>p{height:40px;
+ 	margin:0;
+ 			line-height:40px;}
+/*-----------------------хедер-------------------------------------*/
+		.header{
+			width:1000px;
+			margin:15px auto;
+		
+		}
+		.header::after{
+			content:"";
+			display:block;
+			clear:both;
+
+		}
+			.header>div{
+				float:left;
+				display:block;
+				text-align:center;
+			}
+			.header>div:nth-child(1){
+				width:20%;
+				float:left;
+				display:block;
+			}
+			.header p{font-size:15px;}
+			.header span{
+				color:#002e82;
+				font-size:18px;
+				width:100%;
+				display:block;
+			}
+			.header>div:nth-child(2){
+				width:20%;
+				float:right;
+				display:block;
+			}
+			@media(min-width:  480px;){
+					.header>div{
+					display:block;
+					
+					}
+			}
+			@media(min-width:  768px;){
+					.header{}
+			}
+		/*-----------------------блок1-------------------------------------*/
+		.fon1{
+			position:relative;
+			width:100%;
+			height:600px;
+			
+		}
+
+		.bg_pict1{
+			position:absolute;
+			width:3000px;
+			left:-1000px;
+			right:-1000px;
+			
+			height:600px!important;
+			display:block;
+			background:url(img/fon1.jpg) no-repeat;
+			background-size: auto;
+			-webkit-background-size:auto;
+			 -o-background-size:auto;
+			 -moz-background-size:auto;
+		}
+		.bg{
+			height:600px;
+			position:absolute;
+			left:0;
+			right:0;
+			z-index:-10;
+			background:url(img/fon1_2.jpg);
+			background-size:contain;
+			-webkit-background-size:contain;
+			 -o-background-size:contain;
+			 -moz-background-size:contain;
+		}
+			.wrap{
+				position:absolute;
+				width:1000px;
+				left:50%;
+				top:2%;
+				transform:translate(-50%,0);
+				height:98%;
+			}
+
+				.block1{
+					margin:0;
+					
+					height:100%;
+				}
+					.block1>div:nth-child(2)>div:nth-child(1){
+						margin-top:80px;
+					}
+
+
+						#blue{
+							color:white;
+							position:relative;
+							width:100%;
+							height:30%;
+							text-align:center;
+							
+							background-color:#1a3e80;
+							margin:0;
+							padding:0;
+
+						}
+						#blue>div{
+							width:80%;
+							box-sizing: border-box;
+							transform:translate(-50%,-50%);
+							left:50%;top:50%;
+							position:absolute;}
+						#blue>div>span{
+							font-size:28px;
+							width:100%;
+							box-sizing: border-box;
+						}
+						.block1>div:nth-child(2){
+							position:absolute;
+							top:30%;
+							padding-top:3.5%;
+							padding-bottom:3.5%;
+							height:70%;
+							width:100%;
+							box-sizing: border-box;
+						}
+						.block1>div:nth-child(2) span{
+							color:#ffdb4c;
+						}
+						.block1>div:nth-child(2)::after{
+							content:"";
+							display:block;
+							clear:both;
+						}
+								.block1>div:nth-child(2)>div{
+									display:block;
+									float:left;
+
+								}
+								.block1>div:nth-child(2)>div:nth-child(1){
+									top:50%;
+									width:70%;
+									float:left;
+									
+								}
+								ul{
+									list-style: none;
+									
+								}
+								li>img{
+									display:block;
+									float:left;
+									
+								}
+								li>p{color:white;}
+								.forma{
+									position:relative;
+									width:30%;
+									float:left;
+									height:100%;
+									background-color:white;text-align:center;
+								}
+								.forma>div>span{
+									color:black!important;
+									margin-top:10px;}
+								.forma>div{
+									position:absolute;
+									border:1px solid #c83626;
+									height:90%;
+									width:90%;
+									top: 5%;left:5%;bottom:5%;top:5%;
+									box-sizing: border-box;
+									
+									display:block;
+
+		/*-----------------------блок2-------------------------------------*/						}
+		.fon2{
+			position:relative;
+			width:100%;
+			height:550px;
+			background-color:white;
+		}
+			.wrap2{
+				position:absolute;
+				width:1000px;
+				left:50%;
+				top:10%;
+				transform:translate(-50%,0);
+				height:98%;
+				text-align:center;
+
+			}
+			.wrap2>div:nth-child(1){
+				margin-bottom:30px;
+			}
+			.wrap2>div:nth-child(2)::after,.wrap2>div:nth-child(3)::after{
+				clear:both;
+				display:block;
+				content:"";
+			}
+			.wrap2>div:nth-child(2)>div,.wrap2>div:nth-child(3)>div{
+				float:left;
+				width:32%;
+				}
+				
+				.fon3{
+					
+					position:relative;
+					width:100%;
+					height:700px;
+					background-color:#f1f1f1;
+				}
+				/*-----------------------блок3-------------------------------------*/
+				.fon3 p{color:black;}
+				.wrap3{
+					width:1000px;
+					position:absolute;
+					left:50%;
+					top:10%;
+					transform:translate(-50%,0);
+					height:90%;
+					text-align:center;
+					box-sizing: border-box;
+					overflow:hidden;
+			}
+
+				.wrap3>div{height:100%;}
+				.wrap3>div::after{
+					clear:both;
+					display:block;
+					content:"";
+				}
+
+				.wrap3>div>div:nth-child(2){
+					width:60%;
+					box-sizing: border-box;
+					float:left;}
+				#picwoman{
+					box-sizing: border-box;
+					float:left;
+					width:40%;
+					height:600px;
+					bottom:0;
+					background-image:url(img/woman.jpg);
+					background-repeat:no-repeat;
+					background-size:cover;
+				}
+
+			.typegaranty{
+				margin-top:15px;
+				text-align:left;
+			}	
+
+				.typegaranty>div{
+					width:100%;
+					margin:0;
+					float:left;
+					padding:0;
+				}
+				.typegaranty>div{
+					clear:both;
+					content:"";
+					display:block;
+				}
+				.typegaranty>div>div:nth-child(1){
+					float:left;
+					width:15%;
+					display:block;
+					
+				}
+
+				.typegaranty>div>div:nth-child(2){
+					width:85%;
+					display:block;
+					float:left;
+				}
+/*-----------------------блок4-------------------------------------*/
+				.wrap4{
+					width:1000px;
+					position:absolute;
+					left:50%;
+					
+					
+					transform:translate(-50%,0);
+					height:100%;
+					text-align:center;
+					box-sizing: border-box;
+					
+			}
+				.fon4{
+					
+					position:relative;
+					width:100%;
+					height:300px;
+				
+				}
+					.bg2{
+						height:300px;
+						position:absolute;
+						left:0;
+						right:0;
+						z-index:-100;
+						background:url(img/fon2_2.jpg)no-repeat;
+						background-size:cover;
+					}
+					.bg_pict2{
+						height:300px;
+						position:absolute;
+						width:3000px!important;
+						left:-1000px;
+						right:-1000px;
+						z-index:-10;
+						
+						display:block;
+						background:url(img/fon2.jpg) no-repeat;
+						background-size: contain;
+						-webkit-background-size:contain;
+				 		-o-background-size:contain;
+				 		-moz-background-size:contain;
+					}
+
+							#forma2{
+								position:absolute;
+								width:90%;
+								left:50%;
+								top:50%;
+								transform:translate(-50%,-50%);
+								color:white;
+								text-align:center;
+								padding:15px;
+								border:2px solid  white;
+							}
+								#forma2>p{color:#ffdb4c;}
+/*-----------------------блок5-------------------------------------*/
+				.fon5{
+					
+					position:relative;
+					width:100%;
+					height:500px;
+					background-color:white;
+					overflow:hidden;
+				}
+					.wrap5{
+						width:1000px;
+						height:90%;
+						position:absolute;
+						left:50%;
+						top:10%;
+						transform:translate(-50%,0);
+						
+						text-align:center;
+						box-sizing: border-box;
+						overflow:hidden;
+					}
+						.wrap5>div::after{
+							display:block;
+							content:"";
+							clear:both;
+						}
+						.wrap5>div{
+							height:300px;
+							width:100%;
+							
+						}
+							.leg{
+							
+								width:40%;
+								box-sizing: border-box;
+								border:2px solid #ffdb4c;
+								margin:10px;
+						 		margin-top:50px;
+								float:right;
+								display:block;
+								position:relative;
+							}
+							.leg>div:nth-child(2){
+								margin-top:50px;
+							}
+							.illegal>div:nth-child(2){
+								margin-top:50px;
+							}
+							.illegal{
+								
+								width:40%;
+								box-sizing: border-box;
+								border:2px solid #ffdb4c;
+								margin:10px;
+						 		margin-top:50px;
+								float:left;
+								display:block;
+								position:relative;
+							}
+							
+							.legpic{
+								position:absolute;
+								background-image:url(img/leg1.png);
+								background-repeat:no-repeat;
+								width:90px;
+								height:90px;
+								left:45%;
+								top:-15%;
+								border:0;
+								transform:translate(-25%, 0);
+							}
+							.legpic span{margin-top:50px;}
+							.illegpic{
+								position:absolute;
+								width:90px;
+								height:90px;
+								border:0;
+								left:45%;
+								top:-15%;
+								transform:translate(-25%, 0);
+								background-image:url(img/ill.png);
+								background-repeat:no-repeat;
+							}
+
+							
+							.illcontent>div:nth-child(1){
+								width:20%;
+								float:left;
+								box-sizing: border-box;
+							}
+							.illcontent>div:nth-child(2){
+								width:75%;
+								float:right;
+								box-sizing: border-box;
+								margin-left:15px;
+								text-align:left;
+							}
+								.leg>div:nth-child(3)>div::after,.illegal>div:nth-child(3)>div::after{
+									clear:both;
+									content:"";
+									display:block;
+								}
+
+								.leg>div:nth-child(3)>div>div,.illegal>div:nth-child(3)>div>div{
+									float:left;
+								}
+/*-----------------------блок6-------------------------------------*/
+				.fon6{
+					
+					position:relative;
+					width:100%;
+					height:450px;
+					background-color:#f1f1f1;
+				}
+					.wrap6{
+						width:1000px;
+						height:90%;
+						position:absolute;
+						left:50%;
+						top:10%;
+						transform:translate(-50%,0);
+						
+						text-align:center;
+						box-sizing: border-box;
+						overflow:hidden;
+					}
+							.wrap6>div:nth-child(2)::after{
+								content:"";
+								clear:both;
+								display:block;
+							}
+							.wrap6>div>div{
+								margin-top:60px;
+								width:32%;
+								float:left;
+							}
+						
+/*-----------------------блок7-------------------------------------*/
+				.fon7{
+					
+					position:relative;
+					width:100%;
+					height:300px;
+				
+				}
+					.wrap7{
+							width:1000px;
+							position:absolute;
+							left:50%;
+							
+							
+							transform:translate(-50%,0);
+							height:100%;
+							text-align:center;
+							box-sizing: border-box;
+							
+						}
+						.bg3{
+							height:300px;
+							position:absolute;
+							left:0;
+							right:0;
+							z-index:-100;
+							background:url(img/fon2_2.jpg)no-repeat;
+							background-size:cover;
+						}
+						.bg_pict3{
+							height:300px;
+							position:absolute;
+							width:3000px!important;
+							left:-1000px;
+							right:-1000px;
+							z-index:-10;
+							
+							display:block;
+							background:url(img/fon3.jpg) no-repeat;
+							background-size: contain;
+							-webkit-background-size:contain;
+					 		-o-background-size:contain;
+					 		-moz-background-size:contain;
+						}
+
+								#forma3{
+									position:absolute;
+									width:90%;
+									left:50%;
+									top:50%;
+									transform:translate(-50%,-50%);
+									color:white;
+									text-align:center;
+									padding:15px;
+									border:2px solid  white;
+								}
+									#forma3>p{color:#ffdb4c;}
+/*-----------------------блок8-------------------------------------*/
+				.fon8{height:400px;}
+				.fon8a{height:250px;}
+
+				.fon8,.fon8a{
+					position:relative;
+					width:100%;
+					
+					background-color:white;
+				}
+				.wrap8a{margin-top:2%;}
+				.wrap8,.wrap8a{
+					position:absolute;
+					width:1000px;
+					left:50%;
+					top:10%;
+					transform:translate(-50%,0);
+					height:98%;
+					text-align:center;
+
+			}
+			.fon8a  img{
+				margin-top:45px;
+				float:left;
+				padding:1.5%;
+			}
+
+			.wrap8a>div:nth-child(1){
+				left:15%;
+				transform:translate(-25%,0;);
+				position:absolute;
+				background-color:white;}
+			.wrap8a>div:nth-child(2){
+				height:150px;
+				border:2px solid #ffdb4c;
+			}
+			.wrap8>div:nth-child(1){
+				margin-bottom:35px;
+			}
+			.wrap8>div:nth-child(2)::after,.wrap8>div:nth-child(3)::after{
+				clear:both;
+				display:block;
+				content:"";
+			}
+			.wrap8>div:nth-child(2)>div,.wrap8>div:nth-child(3)>div{
+				float:left;
+				width:25%;
+				box-sizing: border-box;
+				}
+
+/*-----------------------блок9-------------------------------------*/
+				.fon9{
+			position:relative;
+			width:100%;
+			height:500px;
+			margin-bottom:110px;
+			
+		}
+
+		.bg_pict9{
+			position:absolute;
+			width:3000px;
+			left:-1000px;
+			right:-1000px;
+			z-index:-10;
+			height:500px!important;
+			display:block;
+			background:url(img/fon4.jpg) no-repeat;
+			background-size: auto;
+			-webkit-background-size:auto;
+			 -o-background-size:auto;
+			 -moz-background-size:auto;
+		}
+		.bg9{
+			height:500px;
+			position:absolute;
+			left:0;
+			right:0;
+			z-index:-100;
+			background:url(img/fon2_2.jpg);
+			background-size:contain;
+			-webkit-background-size:contain;
+			 -o-background-size:contain;
+			 -moz-background-size:contain;
+		}
+			.wrap9{
+				position:absolute;
+				width:1000px;
+				left:50%;
+				
+				transform:translate(-50%,0);
+				height:98%;
+
+			}
+			.wrap9>div:nth-child(2){
+				z-index:100;
+				color:white;
+				text-align:center;
+				padding-top:30px;
+			}
+				.forma3{
+						top:30px;			
+						position:relative;
+						width:80%;
+						margin:0 auto;
+						height:80%;
+						background-color:white;
+						text-align:center;
+				}
+					.forma3>div{}
+								.forma3>div>span{color:black;}
+								.forma3>div{
+									position:absolute;
+									border:1px solid #c83626;
+									height:90%;
+									width:90%;
+								
+									left:50%;top:50%;
+									transform:translate(-50%,-50%);
+									box-sizing: border-box;
+									
+									display:block;
+
+								}
+				#text{
+					width:88%;
+					height:150px;
+				}				
+				.footer{
+					height:110px;
+					position:absolute;
+					display:block;
+					
+					width:1000px;
+					left:50%;
+					right:50%;
+					transform: translate(-50%,-50%);
+
+				}
+/*-----------------------футер-------------------------------------*/
+				.footer::after{
+					clear:both;
+					content:"";
+					display:block;
+
+					}	
+			.footer>div{
+				float:left;
+				display:block;
+				text-align:center;
+			}
+			.footer>div:nth-child(1){
+				width:20%;
+				float:left;
+				display:block;
+			}
+			.footer p{font-size:14px;}
+			.footer span{
+				color:#002e82;
+				font-size:18px;
+				width:100%;
+				display:block;
+			}
+			.footer>div:nth-child(2){
+				width:20%;
+				float:right;
+				display:block;
+			}			
