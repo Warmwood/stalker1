@@ -69,8 +69,8 @@ input{
 	display:none;
 	position:fixed;
 	bottom:0;
-	left:-2000px;
-	right:-2000px;
+	left:-200%;
+	right:-200%;
 	top:0;
 	background-color: rgba(23,59,136,0.8);
 	opacity:0.2;
@@ -78,6 +78,7 @@ input{
 .visible{display:block!important;}
 
 #divka{
+
 		position:absolute;
       	left:50%;
       	top:50%;
@@ -90,6 +91,13 @@ input{
 		padding-bottom:10px;
 		padding-top:0;
 		text-align:center;
+      }
+      #divka>div:nth-child(1){
+      	width:100%;
+      	height:20px;
+      	padding:0;
+      	margin:0;
+      	background-color:#142c59;
       }
       #divka>p{text-align:center;
       	height:40px;
@@ -112,10 +120,29 @@ input{
  	margin:0;
  	line-height:40px;}
 /*-----------------------хедер-------------------------------------*/
+		
+		
+			@media (min-width:  480px) {
+					.header{
+					width:480px;
+					display:block;
+					
+					}
+			
+			
+			}
+			@media (min-width:  768px) {
+
+					.header{
+					width:768px;
+					display:block;
+					}
+				
+					
+			}
 		.header{
 			width:1000px;
-			margin:15px auto;
-		
+			margin:1% auto;
 		}
 		.header::after{
 			content:"";
@@ -145,15 +172,7 @@ input{
 				float:right;
 				display:block;
 			}
-			@media(min-width:  480px;){
-					.header>div{
-					display:block;
-					
-					}
-			}
-			@media(min-width:  768px;){
-					.header{}
-			}
+		
 		/*-----------------------блок1-------------------------------------*/
 		.fon1{
 			position:relative;
@@ -161,7 +180,20 @@ input{
 			height:600px;
 			
 		}
+			@media(width:480px;){
+					.fon1{
+					width:480px;
+					display:block;
+					
+					}
+			}
+			@media(width:768px;){
 
+					.header>div{
+					width:768px;
+					display:block;
+					}
+			}
 		.bg_pict1{
 			position:absolute;
 			width:3000px;
@@ -448,18 +480,18 @@ input{
 						background-size:cover;
 					}
 					.bg_pict2{
-						height:300px;
-						position:absolute;
-						width:3000px!important;
-						left:-1000px;
-						right:-1000px;
-						z-index:-10;
-						
-						display:block;
-						background:url(img/fon2.jpg) no-repeat;
-						background-size: contain;
-						-webkit-background-size:contain;
-				 		-o-background-size:contain;
+							position:absolute;
+							width:2000px;
+							left:50%;
+							top:50%;
+							z-index:-1;
+							transform: translate(-50%,-50%);
+							height:100%;
+							display:block;
+							background:url(img/fon2.jpg) no-repeat;
+							background-size:cover;
+							-webkit-background-size:cover;
+							 -o-background-size:cover;
 				 		-moz-background-size:contain;
 					}
 
@@ -642,19 +674,20 @@ input{
 							background-size:cover;
 						}
 						.bg_pict3{
-							height:300px;
 							position:absolute;
-							width:3000px!important;
-							left:-1000px;
-							right:-1000px;
+							width:2000px;
+							left:50%;
+							top:50%;
 							z-index:-10;
-							
+							transform: translate(-50%,-50%);
+							height:100%;
 							display:block;
 							background:url(img/fon3.jpg) no-repeat;
-							background-size: contain;
-							-webkit-background-size:contain;
-					 		-o-background-size:contain;
-					 		-moz-background-size:contain;
+							background-size:cover;
+							-webkit-background-size:cover;
+							 -o-background-size:cover;
+							 -moz-background-size:contain;
+		;
 						}
 						#absolute{position:absolute;
 								background-color: rgba(23,59,136,1);
@@ -756,17 +789,18 @@ input{
 
 		.bg_pict9{
 			position:absolute;
-			width:3000px;
-			left:-1000px;
-			right:-1000px;
-			z-index:-10;
-			height:500px!important;
+			width:2000px;
+			left:50%;
+			top:50%;
+			z-index:-1;
+			transform: translate(-50%,-50%);
+			height:100%;
 			display:block;
 			background:url(img/fon4.jpg) no-repeat;
-			background-size: auto;
-			-webkit-background-size:auto;
-			 -o-background-size:auto;
-			 -moz-background-size:auto;
+			background-size: 100%;
+			-webkit-background-size:100%;
+			 -o-background-size:100%;
+			 -moz-background-size:100%;
 		}
 		.bg9{
 			height:500px;

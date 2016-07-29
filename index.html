@@ -380,12 +380,12 @@
 	var a=new Message();
 	function Message(){
 		var windows=$('.window_pup');
-		var divka=$('<div id=divka>').appendTo(windows).html('<p> Спасибо за оставленную заявку!  В ближайшее время с Вами свяжется менеджер</p>').css({zIndex:'100'});
+		var divka=$('<div id=divka>').appendTo(windows).html('<div></div><p><b> Спасибо </b>за оставленную заявку!<br>  В ближайшее время с Вами свяжется менеджер</p>').css({zIndex:'100'});
 		var xthis=this;
 		var but=$('<div id="button"type="submit">').appendTo(divka).html('<p>закрыть</p>').css({marginTop:'50px',left:"50%"});
 		
 		this.open=function(){
-			windows.addClass('visible').css({opacity:'0.2'});
+			windows.addClass('visible').css({opacity:'0.01'});
 			windows.animate({opacity:1},1200,'linear',function(){});
 		};
 
