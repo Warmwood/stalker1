@@ -197,16 +197,15 @@ input{
 					width:470px;
 					display:block;
 					margin:0 auto;
-
+					position:relative;
 					}
 				
 			
 			}
 			@media (min-width:  768px) {
 
-					.fon1{
+					.fon1{	position:relative;
 					margin:0 auto;
-
 					width:768px;
 					padding-top:10px;
 					display:block;
@@ -219,7 +218,7 @@ input{
 
 		.fon1{
 			position:relative;
-			width:100%;
+			width:1000px;
 			height:600px;
 			
 		}
