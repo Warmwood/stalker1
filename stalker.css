@@ -125,25 +125,37 @@ input{
 		
 			@media (min-width:  480px) {
 					.header{
-					width:480px;
+					width:470px;
+					display:block;
+					margin:0 auto;
+
+					}
+				.header>div:nth-child(1),.header>div:nth-child(2){
+					width:50%;
+					float:left;
 					display:block;
 					
 					}
-			
 			
 			}
 			@media (min-width:  768px) {
 
 					.header{
+					margin:0 auto;
+
 					width:768px;
+					padding-top:10px;
 					display:block;
+					box-sizing: border-box;
 					}
 				
 					
 			}
 		.header{
 			width:1000px;
-			margin:1% auto;
+			padding-top:10px;
+
+			margin:0 auto;
 		}
 		.header::after{
 			content:"";
@@ -182,21 +194,35 @@ input{
 			
 		}
 			@media (min-width:  480px) {
-					.header{
+					.fon1{
+					position:relative;
 					width:480px;
-					display:block;
+					display:block;}
+					.wrap{  width:480px;
+							position:absolute;
+				
+							left:50%;
+							top:2%;
+							transform:translate(-50%,0);
+							height:98%;}
 					
-					}
 			
 			
 			}
 			@media (min-width:  768px) {
 
-					.header{
+					.fon1{
+					position:relative;
 					width:768px;
 					display:block;
 					}
+					.wrap{width:100%;
+						position:absolute;
 				
+						left:50%;
+						top:2%;
+						transform:translate(-50%,0);
+						height:98%;}
 					
 			}
 		.bg_pict1{
@@ -240,7 +266,7 @@ input{
 					height:100%;
 				}
 					.block1>div:nth-child(2)>div:nth-child(1){
-						margin-top:80px;
+						margin-top:10%;
 					}
 
 
@@ -334,7 +360,7 @@ input{
 		}
 			.wrap2{
 				position:absolute;
-				width:1000px;
+				width:100%;
 				left:50%;
 				top:10%;
 				transform:translate(-50%,0);
@@ -356,6 +382,33 @@ input{
 				width:32%;
 				}
 				/*-----------------------блок3-------------------------------------*/
+				@media (min-width:  480px) {
+					.fon3{
+					width:470px;
+					display:block;
+					margin:0 auto;
+					padding-top:10px;
+					box-sizing: border-box;
+					}
+				
+			
+			}
+				@media (min-width:  768px) {
+
+					.fon3{
+					margin:0 auto;
+
+					width:768px;
+					padding-top:10px;
+					display:block;
+					box-sizing: border-box;
+					}
+				
+					
+			}
+
+
+
 				.fon3{
 					
 					position:relative;
@@ -428,6 +481,42 @@ input{
 					float:left;
 				}
 /*-----------------------блок4-------------------------------------*/
+				@media (min-width:  480px) {
+					.wrap4{
+					width:480px;
+					position:absolute;
+					left:50%;
+					
+					
+					transform:translate(-50%,0);
+					height:100%;
+					text-align:center;
+					box-sizing: border-box;
+					
+			}
+				
+			
+			}
+				@media (min-width:  768px) {
+
+					.wrap4{
+					width:768px;
+					position:absolute;
+					left:50%;
+					
+					
+					transform:translate(-50%,0);
+					height:100%;
+					text-align:center;
+					box-sizing: border-box;
+					
+			}
+					
+			}
+
+
+
+
 				.wrap4{
 					width:1000px;
 					position:absolute;
@@ -467,7 +556,7 @@ input{
 			#absolute2>div:nth-child(2){
 						margin:0 auto;
 						height:80%;
-						width:800px;
+						width:80%;
 						display:block;
 						text-align:center;
 						background-color:white;
@@ -486,7 +575,7 @@ input{
 					}
 					.bg_pict2{
 							position:absolute;
-							width:2000px;
+							width:200%;
 							left:50%;
 							top:50%;
 							z-index:-1;
@@ -522,7 +611,7 @@ input{
 					overflow:hidden;
 				}
 					.wrap5{
-						width:1000px;
+						width:100%;
 						height:90%;
 						position:absolute;
 						left:50%;
@@ -627,7 +716,7 @@ input{
 					background-color:#f1f1f1;
 				}
 					.wrap6{
-						width:1000px;
+						width:100%;
 						height:90%;
 						position:absolute;
 						left:50%;
@@ -680,7 +769,7 @@ input{
 						}
 						.bg_pict3{
 							position:absolute;
-							width:2000px;
+							width:200%;
 							left:50%;
 							top:50%;
 							z-index:-10;
@@ -736,7 +825,7 @@ input{
 				.wrap8a{margin-top:2%;}
 				.wrap8,.wrap8a{
 					position:absolute;
-					width:1000px;
+					width:100%;
 					left:50%;
 					top:10%;
 					transform:translate(-50%,0);
@@ -794,7 +883,7 @@ input{
 
 		.bg_pict9{
 			position:absolute;
-			width:2000px;
+			width:200%;
 			left:50%;
 			top:50%;
 			z-index:-1;
@@ -821,7 +910,7 @@ input{
 		}
 			.wrap9{
 				position:absolute;
-				width:1000px;
+				width:100%;
 				left:50%;
 				
 				transform:translate(-50%,0);
@@ -862,6 +951,10 @@ input{
 					width:88%;
 					height:150px;
 				}				
+				
+
+				
+/*-----------------------футер-------------------------------------*/
 				.footer{
 					height:110px;
 					position:absolute;
@@ -871,10 +964,8 @@ input{
 					left:50%;
 					right:50%;
 					transform: translate(-50%,-50%);
-
 				}
-/*-----------------------футер-------------------------------------*/
-				.footer::after{
+					.footer::after{
 					clear:both;
 					content:"";
 					display:block;
