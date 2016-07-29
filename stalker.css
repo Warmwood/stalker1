@@ -41,8 +41,9 @@ input{
 	transform:translate(-50%,0 );
 }
 #button4{margin-top:60px;}
-#button1:hover, #button2:hover,#button3:hover,#button4:hover{background-color:#faf374;}
-#button1, #button2,#button3,#button4{
+#button1:hover, #button2:hover,#button3:hover,#butn2:hover,#button4:hover,#butn:hover{background-color:#faf374;}
+#butn{bottom:20px;display:block;}
+#button1,#butn,#butn2, #button2,#button3,#button4{
 
 	
 	background-color:#ffdb4c;
@@ -55,7 +56,7 @@ input{
 	display:inline-block;
 }
 
-#button1 span, #button2 span,#button3 span,#button4 span	{
+#button1 span, #button2 span,#button3 span,#button4 span,#butn span,#butn2 span	{
 	font-size:12px;
 	height:30px;
 	line-height:30px;
@@ -64,16 +65,18 @@ input{
 }
 
 /*-----------------------поп-апы-------------------------------------*/
-#window{
-	display:none;position:fixed;
+.window_pup{
+	display:none;
+	position:fixed;
 	bottom:0;
 	left:-2000px;
 	right:-2000px;
 	top:0;
 	background-color: rgba(23,59,136,0.8);
 	opacity:0.2;
-	z-index:100;}
-#window.visible{display:block;}
+	z-index:1000;}
+.visible{display:block!important;}
+
 #divka{
 		position:absolute;
       	left:50%;
@@ -104,9 +107,10 @@ input{
      	width:100px;
      	height:40px;
      }
- #button>p{height:40px;
+ #button>p{
+ 	height:40px;
  	margin:0;
- 			line-height:40px;}
+ 	line-height:40px;}
 /*-----------------------хедер-------------------------------------*/
 		.header{
 			width:1000px;
@@ -282,9 +286,9 @@ input{
 									top: 5%;left:5%;bottom:5%;top:5%;
 									box-sizing: border-box;
 									
-									display:block;
+									display:block;}
 
-		/*-----------------------блок2-------------------------------------*/						}
+		/*-----------------------блок2-------------------------------------*/						
 		.fon2{
 			position:relative;
 			width:100%;
@@ -301,6 +305,7 @@ input{
 				text-align:center;
 
 			}
+
 			.wrap2>div:nth-child(1){
 				margin-bottom:30px;
 			}
@@ -313,7 +318,7 @@ input{
 				float:left;
 				width:32%;
 				}
-				
+				/*-----------------------блок3-------------------------------------*/
 				.fon3{
 					
 					position:relative;
@@ -321,7 +326,7 @@ input{
 					height:700px;
 					background-color:#f1f1f1;
 				}
-				/*-----------------------блок3-------------------------------------*/
+				
 				.fon3 p{color:black;}
 				.wrap3{
 					width:1000px;
@@ -341,7 +346,7 @@ input{
 					display:block;
 					content:"";
 				}
-
+				
 				.wrap3>div>div:nth-child(2){
 					width:60%;
 					box-sizing: border-box;
@@ -399,12 +404,40 @@ input{
 					
 			}
 				.fon4{
-					
+					margin:0 auto;
 					position:relative;
 					width:100%;
 					height:300px;
 				
 				}
+				#absolute2{position:absolute;
+						
+						height:100%;
+						width:100%;
+						left:50%;
+						top:50%;
+						transform:translate(-50%,-50%);
+						display:none;
+						z-index:1000!important;}
+						#absolute2>div:nth-child(1){position:absolute;
+						background-color: rgba(23,59,136,0.7);
+						left:-2000px;
+						right:-2000px;
+
+						}
+
+						
+			#absolute2>div:nth-child(2){
+						margin:0 auto;
+						height:80%;
+						width:800px;
+						display:block;
+						text-align:center;
+						background-color:white;
+						}
+			#absolute2>div p{
+							padding:20px;
+						}
 					.bg2{
 						height:300px;
 						position:absolute;
@@ -623,7 +656,23 @@ input{
 					 		-o-background-size:contain;
 					 		-moz-background-size:contain;
 						}
-
+						#absolute{position:absolute;
+								background-color: rgba(23,59,136,1);
+								height:100%;
+								width:100%;
+								left:50%;
+								top:50%;
+								transform:translate(-50%,-50%);
+								display:none;
+								z-index:1000;}
+						#absolute>div{
+								margin:0 auto;
+								height:260px;
+								background-color:white;
+								width:800px;}
+						#absolute>div p{
+							padding:20px;
+						}
 								#forma3{
 									position:absolute;
 									width:90%;
@@ -662,7 +711,16 @@ input{
 				float:left;
 				padding:1.5%;
 			}
-
+			.arrow{
+				
+				position:absolute;
+				width:80px;height:80px;
+				right:-10%;top:0.5%;
+				background-size: contain;
+			-webkit-background-size:contain;
+			 -o-background-size:contain;
+			 -moz-background-size:contain;
+			}
 			.wrap8a>div:nth-child(1){
 				left:15%;
 				transform:translate(-25%,0;);
@@ -684,6 +742,7 @@ input{
 				float:left;
 				width:25%;
 				box-sizing: border-box;
+				position:relative;
 				}
 
 /*-----------------------блок9-------------------------------------*/
