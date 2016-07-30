@@ -6,7 +6,7 @@
 <meta charset="utf-8">	
 </head>
 <body>
-	
+	<div class="window_pup"><div id="divka"></div></div>
 	<div class="header">
 				<div>
 					<span><b>Гарант оригинал</b></span>
@@ -21,7 +21,7 @@
 	<div class="fon1">
 		<div class="bg"></div>
 		<div class="wrap">
-		<div class="window_pup"></div>
+		
 			<div class="bg_pict1"></div>
 			<div class="block1">
 				<div id="blue">
@@ -168,7 +168,7 @@
 		<div id="button2"type="submit"><span><b>Оставить заявку</b></span></div>
 	</div>
 	</div>
-<div class="window_pup"></div>
+
 <div id="absolute2">
 				<div></div>		
 				<div>
@@ -287,7 +287,7 @@
 	 		  				
 						</div>
 
-	</div><div class="window_pup"></div>
+	
 	<div id="forma3">
 	 	
 		<span>Не играйте с огнем</span>
@@ -308,7 +308,7 @@
 		     <div class="f8a_img"><img src="img/logo4.png"></div>
 		     <div class="f8a_img"><img src="img/logo5.png"></div>
 		</div>
-		<div class="window_pup"></div>
+		
 	</div>
 </div>
 <div class="fon8">
@@ -346,8 +346,7 @@
 		</div>
 		<div class="wrap9">
 			<div class="bg_pict9"></div>
-			<div><span>Остались вопросы?</span></div>
-			<div class="window_pup"></div>
+			
 			<div class="forma3">
 						<div>
 							
@@ -382,7 +381,7 @@
 	var a=new Message();
 	function Message(){
 		var windows=$('.window_pup');
-		var divka=$('<div id=divka>').appendTo('body').html('<div></div><p><b> Спасибо </b>за оставленную заявку!<br>  В ближайшее время с Вами свяжется менеджер</p>').css({zIndex:'100'});
+		var divka=$('#divka').html('<div></div><p><b> Спасибо </b>за оставленную заявку!<br>  В ближайшее время с Вами свяжется менеджер</p>').css({zIndex:'100'});
 		var xthis=this;
 		var but=$('<div id="button"type="submit">').appendTo(divka).html('<p>закрыть</p>').css({marginTop:'50px',left:"50%"});
 		
@@ -393,7 +392,7 @@
 
 		this.shut=function(){
 		
-			//
+			
 			windows.animate({opacity:0},1200,'linear',function(){
 			windows.removeClass('visible');
 			
