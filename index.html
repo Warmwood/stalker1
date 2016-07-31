@@ -6,6 +6,7 @@
 <meta charset="utf-8">	
 </head>
 <body>
+<form action="mail.php">
 	<div class="window_pup"><div id="divka"></div></div>
 	<div class="header">
 				<div>
@@ -351,8 +352,8 @@
 						<div>
 							
 							<p>Напишите нам и мы ответим в течении 30 минут!</p>
-							<label><input name="text" id="text"type="text"placeholder="Введите Ваш вопрос"> </label>
-							<label><input name="login" id="login"type="text"placeholder="Введите Ваше имя"> </label>
+							<label><input name="question" id="text"type="text"placeholder="Введите Ваш вопрос"> </label>
+							<label><input name="name" id="login"type="text"placeholder="Введите Ваше имя"> </label>
 	 		  				<label><input name="phone" id="phone"type="text"placeholder=" Введите Ваш телефон"></label>
 	 		  				<label><input name="email" id="email"type="text"placeholder=" Введите Ваш email"></label>
 	 		  				<div id="button4"type="submit"><span><b>Оставить заявку</b></span></div>
@@ -423,5 +424,6 @@ $('#butn2').on("click",function(){
 $('#button2').on("click",function(){$("#absolute2").addClass("visible");});
 $('#button3').on("click",function(){$("#absolute").addClass("visible");});
 	</script>
+	</form>
 </body>
 </html>
