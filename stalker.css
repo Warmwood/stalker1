@@ -145,7 +145,8 @@ input{
 			margin:0 auto;
 		}
 			
-		.forma_call{display:none;}
+		.forma_call{display:none;
+			position:absolute;}
 		.header::after{
 			content:"";
 			display:block;
