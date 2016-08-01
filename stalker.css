@@ -10,7 +10,7 @@ body{
 	max-width: initial;
 
 }
-
+.visible{display:block!important;}
 p,span{
 	font-family:Arial;
 	
@@ -74,10 +74,10 @@ input{
 	left:-200%;
 	right:-200%;
 	top:0;
-	background-color: rgba(23,59,136,0.8);
+	background-color: rgba(0,0,0,0.5);
 	opacity:0.2;
 	z-index:1000;}
-.visible{display:block!important;}
+
 
 #divka{
 
@@ -151,7 +151,7 @@ input{
 	left:-200%;
 	right:-200%;
 	top:0;
-	background-color: rgba(23,59,136,0.8);
+	background-color: rgba(0,0,0,0.5);
 	opacity:1;
 	z-index:100;}
 	.forma_call>div,.forma_call2>div{
@@ -394,21 +394,39 @@ input{
 				box-sizing:border-box;
 				}
 
-
+				.wrap2>div:nth-child(2){
+					padding-top: 40px;
+				}
 
 			@media (max-width:  768px) {
 			.krug {
 				height:50%;
-				width: 40%;
+				width: 35%;
 				float:left;
 				padding:5px;box-sizing:border-box;
+				margin-right: 12%;
 			}
-
+			.wrap2>div:nth-child(2){
+					padding-top: 10px;
+				}
+				.fon2{height: 610px;}
 			.krug img{width:70px;}
 			span{font-size:19px;
-				padding: 5px 5px;box-sizing:border-box;}
+				padding: 3px 3px;box-sizing:border-box;}
 				p{display:block;
 					}
+			}
+
+
+
+
+			@media (max-width:  480px) {
+			.krug {
+				height:50%;
+				width: 35%;
+				float:left;
+				padding:5px;box-sizing:border-box;
+				margin-right: 12%;
 			}
 				/*-----------------------блок3-------------------------------------*/
 				.fon3{

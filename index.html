@@ -419,13 +419,13 @@
 		
 		this.open=function(){
 			windows.addClass('visible').css({opacity:'0.01'});
-			windows.animate({opacity:1},1200,'linear',function(){});
+			windows.animate({opacity:1},300,'linear',function(){});
 		};
 
 		this.shut=function(){
 		
 			
-			windows.animate({opacity:0},1200,'linear',function(){
+			windows.animate({opacity:0},300,'linear',function(){
 			windows.removeClass('visible');
 			
 		});
@@ -451,10 +451,10 @@ $('#butn').on("click",function(){
 
 				}
 				);
-$('.buttom5').on("click",function(){
-												
+$('.button5').on("click",function(){
+				$(".forma_call").removeClass("visible");								
 				a.open();
-				$(".forma_call").removeClass("visible");
+				
 												
 
 				}
@@ -470,7 +470,7 @@ $('#butn2').on("click",function(){
 $('#button2').on("click",function(){$("#absolute2").addClass("visible");});
 $('#button3').on("click",function(){$("#absolute").addClass("visible");});
 $('.call').on("click",function(){$(".forma_call").addClass("visible");});
-$('#call2').on("click",function(){$(".forma_call").addClass("visible");});
+
 	</script>
 	</form>
 </body>
