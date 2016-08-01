@@ -8,6 +8,7 @@ body{
 	margin:0 auto;
 	overflow-x:hidden;
 	max-width: initial;
+
 }
 
 p,span{
@@ -36,7 +37,7 @@ input{
 }
 
 /*----------------------кнопки--------------------------------------*/
-#button2,#button3{	
+#button2,.fon7 #button3{	
 	position:absolute;
 	bottom:-15%;
 	transform:translate(-50%,0 );
@@ -144,7 +145,7 @@ input{
 			margin:0 auto;
 		}
 			
-		
+		.forma_call{display:none;}
 		.header::after{
 			content:"";
 			display:block;
@@ -183,37 +184,18 @@ input{
 			position:relative;
 			width:100%;
 			height:600px;
-			
-		}
-
-		.bg_pict1{
-			position:absolute;
-			max-width:2000px;
-			width:100%;
-			left:-50%;
-			right:-50%;
-		
-			
-			height:600px!important;
-			display:block;
 			background:url(img/fon1.jpg) no-repeat;
-			background-size: auto;
+			background-size: auto 100%;
+		
+			 background-position: center;
 			-webkit-background-size:auto;
 			 -o-background-size:auto;
 			 -moz-background-size:auto;
+			 display:block;
 		}
-		.bg{
-			height:600px;
-			position:absolute;
-			left:0;
-			right:0;
-			z-index:-10;
-			background:url(img/fon1_2.jpg);
-			background-size:contain;
-			-webkit-background-size:contain;
-			 -o-background-size:contain;
-			 -moz-background-size:contain;
-		}
+
+		
+		
 			.wrap{
 				position:absolute;
 				max-width:1000px;
@@ -334,7 +316,7 @@ input{
 								
 
 
-								.forma>div>span{
+								.forma>div>form>span{
 									color:black!important;
 									margin-top:10px;}
 								.forma>div{
@@ -495,61 +477,47 @@ input{
 					position:relative;
 					width:100%;
 					height:300px;
-				
+					background:url(img/fon2.jpg) no-repeat;
+					background-size: auto 100%;
+		
+			 		background-position: center;
+					-webkit-background-size:auto;
+			 		-o-background-size:auto;
+			 		-moz-background-size:auto;
+			 		display:block;
 				}
-				#absolute2{position:absolute;
-						
+				#absolute2{
+						position:absolute;
+						display:none;
 						height:100%;
 						width:100%;
 						left:50%;
 						top:50%;
 						transform:translate(-50%,-50%);
-						display:none;
-						z-index:1000!important;}
-						#absolute2>div:nth-child(1){position:absolute;
-						background-color: rgba(23,59,136,0.7);
-						left:-2000px;
-						right:-2000px;
-
-						}
-
 						
-			#absolute2>div:nth-child(2){
-						margin:0 auto;
-						height:80%;
-						width:800px;
-						display:block;
-						text-align:center;
-						background-color:white;
-						}
+						z-index:1000!important;
+					}
+							#absolute2>div:nth-child(1){position:absolute;
+							background-color: rgba(23,59,136,0.7);
+							z-index:-10;
+							height:300px;
+							width:100%;
+							display:block;
+							text-align:center;
+							
+							}
+							#absolute2>div:nth-child(2){
+								margin:0 auto;
+								height:260px;
+								background-color:white;
+								max-width:800px;
+								width:100%;}
 			#absolute2>div p{
 							padding:20px;
+
 						}
-					.bg2{
-						height:300px;
-						position:absolute;
-						left:0;
-						right:0;
-						z-index:-100;
-						background:url(img/fon2_2.jpg)no-repeat;
-						background-size:cover;
-					}
-					.bg_pict2{
-							position:absolute;
-							max-width:2000px;
-							width:100%;
-							left:50%;
-							top:50%;
-							z-index:-1;
-							transform: translate(-50%,-50%);
-							height:100%;
-							display:block;
-							background:url(img/fon2.jpg) no-repeat;
-							background-size:cover;
-							-webkit-background-size:cover;
-							 -o-background-size:cover;
-				 			-moz-background-size:contain;
-					}
+					
+				
 
 							#forma2{
 								position:absolute;
@@ -561,8 +529,9 @@ input{
 								text-align:center;
 								padding:15px;
 								border:2px solid  white;
+								z-index:100;
 							}
-								#forma2>p{color:#ffdb4c;}
+								#forma2 p{color:#ffdb4c;}
 /*-----------------------блок5-------------------------------------*/
 				.fon5{
 					
@@ -752,6 +721,14 @@ input{
 					position:relative;
 					width:100%;
 					height:300px;
+					background:url(img/fon2.jpg) no-repeat;
+					background-size: auto 100%;
+		
+			 		background-position: center;
+					-webkit-background-size:auto;
+			 		-o-background-size:auto;
+			 		-moz-background-size:auto;
+			 		display:block;
 				
 				}
 					.wrap7{
@@ -767,52 +744,28 @@ input{
 							box-sizing: border-box;
 							
 						}
-						.bg3{
-							height:300px;
-							position:absolute;
-							left:0;
-							right:0;
-							z-index:-100;
-							background:url(img/fon2_2.jpg)no-repeat;
-							background-size:cover;
-						}
-						.bg_pict3{
-							position:absolute;
-							max-width:2000px;
-							width:100%;
-							left:50%;
-							top:50%;
-							z-index:-10;
-							transform: translate(-50%,-50%);
-							height:100%;
-							display:block;
-							background:url(img/fon3.jpg) no-repeat;
-							background-size:cover;
-							-webkit-background-size:cover;
-							 -o-background-size:cover;
-							 -moz-background-size:contain;
-		;
-						}
-						#absolute{position:absolute;
+					
+					
+						#absolute{position:absolute;display:none;
 								background-color: rgba(23,59,136,1);
 								height:100%;
 								width:100%;
 								left:50%;
 								top:50%;
 								transform:translate(-50%,-50%);
-								display:none;
+								
 								z-index:1000;}
-						#absolute>div{
+						#absolute>form>div{
 								margin:0 auto;
 								height:260px;
 								background-color:white;
 								max-width:800px;
 								width:100%;}
-						#absolute>div p{
-							padding:20px;
+						#absolute>form>div p{
+							padding:20px;color:black;
 						}
 								#forma3{
-									position:absolute;
+								position:absolute;
 									width:90%;
 									left:50%;
 									top:50%;
@@ -821,12 +774,20 @@ input{
 									text-align:center;
 									padding:15px;
 									border:2px solid  white;
-								}
-									#forma3>p{color:#ffdb4c;}
+							}
+									#forma3 p{color:#ffdb4c;}
+									#forma3 #button3{background-color:#ffdb4c;
+	color:black;
+	width:200px;
+	height:30px;
+	border-radius:3px;
+	text-align:center;
+	margin:5px;
+	display:inline-block;}
 /*-----------------------блок8-------------------------------------*/
 				.fon8{height:400px;}
 				.fon8a{height:250px;}
-
+				
 				.fon8,.fon8a{
 					position:relative;
 					width:100%;
@@ -845,12 +806,12 @@ input{
 					text-align:center;
 
 			}
-			.f8a_img{width:15%;
+			.f8a_img{width:17%;
 				float:left;
 				margin-top:45px;
 				
-				padding:1.2%;}
-		
+				padding:1.5%;}
+		.f8a_img img{width:100%;}
 			.arrow{
 				
 				position:absolute;
@@ -862,14 +823,15 @@ input{
 			 -o-background-size:contain;
 			 -moz-background-size:contain;
 			}
+			.wrap8a>div:nth-child(1)>span{display:block;width:100%;}
 			.wrap8a>div:nth-child(1){
-				left:15%;
-				transform:translate(-25%,0;);
-				position:absolute;
+				position:absolute;width:80%;
+				top:-1%;
+				left:10%;
 				background-color:white;}
 			.wrap8a>div:nth-child(2){
 				height:150px;
-				border:2px solid #ffdb4c;
+				border:2px solid #ffdb4c;margin-top:20px;
 			}
 			.wrap8>div:nth-child(1){
 				margin-bottom:35px;
@@ -895,51 +857,38 @@ input{
 									right:7%;top:0.5%;
 									background-repeat:no-repeat;
 								}
-								.f8a_img{width:15%;padding-top:28px;float:left;}
-								.f8a_img img{width:95%;}
+								
+								
 							}
-
-							
-
-
-
+					@media (max-width: 650px) {
+					.fon8a{height:450px;text-align:center;}	
+					.wrap8a>div:nth-child(1){margin-top:-10px;
+				}
+			.wrap8a>div:nth-child(2){
+				height:350px;margin-top:29px;
+				border:2px solid #ffdb4c;
+			}	
+					 .f8a_img {width:90%;margin:3px;margin-top:0 auto;display:inline-block;text-align:center;}
+					 .f8a_img img{width:30%;margin:0;padding:0;}
+					}
 /*-----------------------блок9-------------------------------------*/
 				.fon9{
 			position:relative;
 			width:100%;
-			height:510px;
+			height:500px;
 			margin-bottom:90px;
+			background:url(img/fon4.jpg) no-repeat;
+			background-size: auto 100%;
+		display:block;
+			 background-position: center;
+			-webkit-background-size:auto;
+			 -o-background-size:auto;
+			 -moz-background-size:auto;
+			 
 			
 		}
 		.fon9  p{color:black;}
-		.bg_pict9{
-			position:absolute;
-			max-width:2000px;
-			width:100%;
-			left:-50%;
-			top:50%;
-			z-index:-1;
-			transform: translate(-50%,-50%);
-			height:100%;
-			display:block;
-			background:url(img/fon4.jpg) no-repeat;
-			background-size: 100%;
-			-webkit-background-size:100%;
-			 -o-background-size:100%;
-			 -moz-background-size:100%;
-		}
-		.bg9{
-			height:500px;
-			position:absolute;
-			left:0;
-			right:0;
-			z-index:-100;
-			background:url(img/fon2_2.jpg);
-			background-size:contain;
-			-webkit-background-size:contain;
-			 -o-background-size:contain;
-			 -moz-background-size:contain;
-		}
+		
 			.wrap9{
 				position:absolute;
 				max-width:1000px;
@@ -956,7 +905,7 @@ input{
 				text-align:center;
 				padding-top:30px;
 			}
-				.forma3{
+				.forma4{
 						top:30px;			
 						position:relative;
 						width:80%;
@@ -965,9 +914,9 @@ input{
 						background-color:white;
 						text-align:center;
 				}
-					.forma3>div{}
-								.forma3>div>span{color:black;}
-								.forma3>div{
+					
+								.forma4>div>form>p{color:black;}
+								.forma4>div {
 									position:absolute;
 									border:1px solid #c83626;
 									height:90%;
@@ -985,7 +934,7 @@ input{
 					height:150px;
 				}				
 				@media (max-width: 480px) {
-			.fon9,.bg9{						
+			.fon9{						
 			height:610px;}
 			#text{height:200px; }			}
 /*-----------------------футер-------------------------------------*/
