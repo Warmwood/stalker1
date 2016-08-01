@@ -16,7 +16,7 @@
 				</div>
 				<div>
 					<span><b>8(800)735-39-95</b></span>
-					<a id="call"><b>заказать обратный звонок</b></a>
+					<div class="call"><a ><b>заказать обратный звонок</b></a></div>
 						<div class="forma_call">
 							<div>
 								<form action="mail.php" method="post">
@@ -26,7 +26,7 @@
 									<label><input name="name" id="login"type="text"placeholder="Введите Ваше имя"> </label>
 			 		  				<label><input name="phone" id="phone"type="text"placeholder=" Введите Ваш телефон"></label>
 			 		  			
-			 		  				<div id="button4"type="submit"><span><b>Оставить заявку</b></span></div>
+			 		  				<div class="button5"type="submit"><span><b>Оставить заявку</b></span></div>
 			 		  			</form>	
 							</div>
 						</div>
@@ -399,21 +399,9 @@
 				</div>
 				<div>
 					<span><b>8(800)735-39-95</b></span>
-					<a id="call2"><b>заказать обратный звонок</b></a>
+					<div class="call"><a><b>заказать обратный звонок</b></a></div>
 
-				<div class="forma_call">
-					<div>
-						<form action="mail.php" method="post">
-							
-							<p>Оставьте телефон и мы ответим в течении 30 минут!</p>
-							
-							<label><input name="name" id="login"type="text"placeholder="Введите Ваше имя"> </label>
-	 		  				<label><input name="phone" id="phone"type="text"placeholder=" Введите Ваш телефон"></label>
-	 		  			
-	 		  				<div id="button5"type="submit"><span><b>Оставить заявку</b></span></div>
-	 		  			</form>	
-					</div>
-				</div>
+				
 					<p>пн-пт,9.00-21.00</p>
 				</div>
 	</div>
@@ -453,12 +441,20 @@ if($.cookie("thx")) {
         }
 
 
-$('#button4').on("click",a.open);$('#button5').on("click",a.open);
+$('#button4').on("click",a.open);
 $('#button1').on("click",a.open);
 $('#butn').on("click",function(){
 												
 				a.open();
 				$("#absolute2").removeClass("visible");
+												
+
+				}
+				);
+$('.buttom5').on("click",function(){
+												
+				a.open();
+				$(".forma_call").removeClass("visible");
 												
 
 				}
@@ -470,11 +466,11 @@ $('#butn2').on("click",function(){
 												
 
 								}
-								);
+							);
 $('#button2').on("click",function(){$("#absolute2").addClass("visible");});
 $('#button3').on("click",function(){$("#absolute").addClass("visible");});
-$('#call').on("click",function(){$("#forma_call").addClass("visible");});
-$('#call2').on("click",function(){$("#forma_call").addClass("visible");});
+$('.call').on("click",function(){$(".forma_call").addClass("visible");});
+$('#call2').on("click",function(){$(".forma_call").addClass("visible");});
 	</script>
 	</form>
 </body>
