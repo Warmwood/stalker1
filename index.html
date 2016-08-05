@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="stalker.css">
+
 <script type="text/javascript"src="js\jquery.min.js"></script>
 <script src="js/jquery.cookie.js"></script>
+
 <meta charset="utf-8">	
 </head>
 <body>
-<form action="mail.php">
+
 	<div class="window_pup"><div id="divka"></div></div>
 	<div class="header">
 				<div>
@@ -18,15 +21,18 @@
 					<span><b>8(800)735-39-95</b></span>
 					<div class="call"><a ><b>заказать обратный звонок</b></a></div>
 						<div class="forma_call">
+						
 							<div>
+						<div></div>
 								<form action="mail.php" method="post">
 									
 									<p>Оставьте телефон и мы ответим в течении 30 минут!</p>
 									
-									<label><input name="name" id="login"type="text"placeholder="Введите Ваше имя"> </label>
-			 		  				<label><input name="phone" id="phone"type="text"placeholder=" Введите Ваш телефон"></label>
+									<label><input name="name" class="login"type="text"placeholder="Введите Ваше имя"> </label>
+			 		  				<label><input name="phone" class="phone"type="text"placeholder=" Введите Ваш телефон"></label>
 			 		  			
-			 		  				<div class="button5"type="submit"><span><b>Оставить заявку</b></span></div>
+			 		  				<div class="button5"type="submit"><p>Оставить заявку</p></div>
+
 			 		  			</form>	
 							</div>
 						</div>
@@ -70,6 +76,7 @@
 								<label><input type="text"placeholder="Введите Ваше имя" name="name"> </label>
 		 		  				<label><input type="text"placeholder=" Введите Ваш телефон" name="phone"></label>
 		 		  				<div id="button1"type="submit"><span><b>Оставить заявку</b></span></div>
+
 		 		  				<p>*Оставление заявки вас ни к чему не обязывает</p>
 							</form></div>
 						
@@ -197,9 +204,9 @@
 									<p>Оставьте заявку и мы поможем Вам получить</br>
 									Легальную банковскую гарантию</p>
 									
-									<label><input name="login" id="login"type="text"placeholder="Введите Ваше имя"> </label>
-			 		  				<label><input name="phone" id="phone"type="text"placeholder=" Введите Ваш телефон"></label>
-			 		  				<label><input name="email" id="email"type="text"placeholder=" Введите Ваш email"></label>
+									<label><input name="login" class="login"type="text"placeholder="Введите Ваше имя"> </label>
+			 		  				<label><input name="phone" classd="phone"type="text"placeholder=" Введите Ваш телефон"></label>
+			 		  				<label><input name="email" class="email"type="text"placeholder=" Введите Ваш email"></label>
 			 		  				<div id="butn"type="submit"><span><b>Оставить заявку</b></span></div>
 			 				</form>		
 					</div>
@@ -277,15 +284,15 @@
 	<div class="wrap6">
 		<div><span>К чему приводит получение нелегальной банковской гарантии?</span></div>
 		<div>
-			<div>
+			<div class="fon6_img">
 				<img src="img/n1.png">
 				<p>Риск неполучения</p>
 			</div>
-			<div>
+			<div class="fon6_img">
 				<img src="img/n2.png">
 				<p>Испорченная кредитная история</p>
 			</div>
-			<div>
+			<div class="fon6_img">
 				<img src="img/n3.png">
 				<p>Уголовная преследование со стороны государства</p>
 			</div>
@@ -313,9 +320,9 @@
 										<p>Оставьте заявку и мы поможем Вам получить<br>
 										Легальную банковскую гарантию</p>
 										
-										<label><input name="login" id="login"type="text"placeholder="Введите Ваше имя"> </label>
-				 		  				<label><input name="phone" id="phone"type="text"placeholder=" Введите Ваш телефон"></label>
-				 		  				<label><input name="email" id="email"type="text"placeholder=" Введите Ваш email"></label>
+										<label><input name="login" class="login"type="text"placeholder="Введите Ваше имя"> </label>
+				 		  				<label><input name="phone" class="phone"type="text"placeholder=" Введите Ваш телефон"></label>
+				 		  				<label><input name="email" class="email"type="text"placeholder=" Введите Ваш email"></label>
 				 		  				<div id="butn2"type="submit"><span><b>Оставить заявку</b></span></div>
 				 		  				
 							</form>		</div>
@@ -381,9 +388,9 @@
 							
 							<p>Напишите нам и мы ответим в течении 30 минут!</p>
 							<label><input name="question" id="text"type="text"placeholder="Введите Ваш вопрос"> </label>
-							<label><input name="name" id="login"type="text"placeholder="Введите Ваше имя"> </label>
-	 		  				<label><input name="phone" id="phone"type="text"placeholder=" Введите Ваш телефон"></label>
-	 		  				<label><input name="email" id="email"type="text"placeholder=" Введите Ваш email"></label>
+							<label><input name="name" class="login"type="text"placeholder="Введите Ваше имя"> </label>
+	 		  				<label><input name="phone" class="phone"type="text"placeholder=" Введите Ваш телефон"></label>
+	 		  				<label><input name="email" class=="email"type="text"placeholder=" Введите Ваш email"></label>
 	 		  				<div id="button4"type="submit"><span><b>Оставить заявку</b></span></div>
 	 		  			</form>	
 				</div>
@@ -409,7 +416,60 @@
 
 
 	<script type="text/javascript">
+	$( "div.krug" ).css({opacity:"0.1"});
+	var stop=false;
+		interval();
+		$(window).on('scroll',scrolling);
+
+
+	function scrolling(){
+		 y=$(window).scrollTop();
+		 var z=false;
+		 var mas=[];
+		if((y>250)&&(y<850)){
+		 	
+			if (!z) {
+				z=true;console.log(y);
+
+				$( "div.krug" ).each(function(index) {
+  				$( this ).animate({opacity:"1"},10,'linear',function(){});
+				});
+
+				window.stop=true;z=false;
+			}
+
+		}
+		else  if((y>2400)&&(y>2800)){
+			console.log(y);
+		$( "div.krug" ).css({opacity:"0.1"});
+			window.stop=true;
+		}
+		else  if(y>1180){
+			console.log(y);
+		$( "div.krug" ).css({opacity:"0.1"});
+			window.stop=true;
+		}
+		else  if(y>1180){
+			console.log(y);
+		$( "div.krug" ).css({opacity:"0.1"});
+			window.stop=true;
+		}
+
+
+
+
+
+	}
+function interval(){
 	
+		if(window.stop==false){
+			window.stop=setInterval(function() {scrolling()}, 2305);
+			}
+			else{clearInterval(window.stop);window.stop=false;}
+		}
+
+
+
 	var a=new Message();
 	function Message(){
 		var windows=$('.window_pup');
@@ -472,6 +532,6 @@ $('#button3').on("click",function(){$("#absolute").addClass("visible");});
 $('.call').on("click",function(){$(".forma_call").addClass("visible");});
 
 	</script>
-	</form>
+	
 </body>
 </html>
